@@ -9,9 +9,6 @@ end
 local formatting = null_ls.builtins.formatting -- to setup formatters
 local diagnostics = null_ls.builtins.diagnostics -- to setup linters
 
--- to setup format on save
-local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
-
 -- configure null_ls
 null_ls.setup({
 	-- setup formatters & linters
