@@ -63,4 +63,7 @@ keymap.set("n", "<leader>gs", "<cmd>Telescope git_status<cr>") -- list current c
 keymap.set("n", "<leader>rs", ":LspRestart<CR>") -- mapping to restart lsp if necessary
 
 -- formatting
-keymap.set("n", "<leader>lf", ":lua vim.lsp.buf.formatting()<CR>")
+keymap.set("n", "<leader>lf", ":lua vim.lsp.buf.format({ async = true })<CR>")
+
+-- exit terminal insert mode
+keymap.set("t", "<Esc>", "<C-\\><C-n>")
