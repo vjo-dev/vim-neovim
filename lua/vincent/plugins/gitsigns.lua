@@ -2,7 +2,7 @@
 local setup, gitsigns = pcall(require, "gitsigns")
 if not setup then
   print("gitsigns not found!")
-	return
+  return
 end
 
 -- configure/enable gitsigns

@@ -31,11 +31,12 @@ opt.signcolumn = "yes"
 -- backspace
 opt.backspace = "indent,eol,start"
 
--- clipboard
+-- clipboard - allow to copy from neovim to another window
 opt.clipboard:append("unnamedplus")
 
 -- split windows
 opt.splitright = true
 opt.splitbelow = true
 
+-- make - symbol part of the word
 opt.iskeyword:append("-")

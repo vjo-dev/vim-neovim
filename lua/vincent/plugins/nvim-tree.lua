@@ -6,11 +6,14 @@ if not setup then
 end
 
 -- recommended settings from nvim-tree documentation
-vim.g.loaded = 1
+vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
 -- change color for arrows in tree to light blue
 vim.cmd([[ highlight NvimTreeIndentMarker guifg=#3FC5FF ]])
+
+-- set termguicolors to enable highlight groups
+vim.opt.termguicolors = true
 
 -- configure nvim-tree
 nvimtree.setup({
@@ -24,6 +27,7 @@ nvimtree.setup({
 				},
 			},
 		},
+    group_empty = true,
 	},
 	-- disable window_picker for
 	-- explorer to work well with
@@ -35,4 +39,15 @@ nvimtree.setup({
 			},
 		},
 	},
+  view = {
+    adaptive_size = true,
+    mappings = {
+      list = {
+        { key = "u", action = "dir_up" },
+      },
+    },
+  },
+  filters = {
+    dotfiles = true,
+  },
 })
