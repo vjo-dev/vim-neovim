@@ -26,6 +26,9 @@ null_ls.setup({
       diagnostics_postprocess = function(diagnostic)
         diagnostic.code = diagnostic.message_id
       end,
+      condition = function(utils)
+        return utils.root_has_file(".pylintrc") -- change file extension if you use something else
+      end,
     }),
     diagnostics.eslint_d.with({ -- js/ts linter
       -- only enable eslint if root has .eslintrc.js (not in youtube nvim video)

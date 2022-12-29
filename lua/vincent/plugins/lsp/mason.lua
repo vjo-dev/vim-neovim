@@ -39,8 +39,8 @@ mason_lspconfig.setup({
     -- "eslint",
     -- "html",
     -- "jsonls",
-    "tsserver",
-    "sumneko_lua",
+    -- "tsserver",
+    -- "sumneko_lua",
     -- "marksman",
     -- "powershell_es",
     -- "pyright",
@@ -57,11 +57,11 @@ mason_null_ls.setup({
     -- "hadolint", -- Dockerfile
     -- "xo", -- javascript javascriptreact typescript typescriptreact
     -- "eslint_d", -- javascript javascriptreact typescript typescriptreact vue
-    "prettier", -- javascript javascriptreact typescript typescriptreact vue css scss less html json jsonc yaml markdown markdown.mdx graphql handlebars
+    -- "prettier", -- javascript javascriptreact typescript typescriptreact vue css scss less html json jsonc yaml markdown markdown.mdx graphql handlebars
     -- "fixjson", -- json
-    "stylua", -- lua formatter
+    -- "stylua", -- lua formatter
     -- "alex", -- markdown
-    "black", -- python
+    -- "black", -- python
     -- "shellcheck", -- sh
     -- "sqlfluff", -- sql
     -- "vint", -- vim

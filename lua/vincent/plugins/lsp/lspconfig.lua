@@ -105,3 +105,20 @@ lspconfig["sumneko_lua"].setup({
     },
   },
 })
+
+lspconfig["jedi_language_server"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
+
+lspconfig["quick_lint_js"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
+
+lspconfig["rome"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
+
+
